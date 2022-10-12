@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 /* globol */
 html{
     box-sizing: border-box;
     height: 100%;
     scroll-behavior: smooth;
+}
+:root{
+    --text_color:rgba(110, 114, 142, 1);
+    --text_color_white:#fff;
+
 }
 *,
 *::before,
@@ -16,10 +22,14 @@ body{
     height: 100%;
     padding: 0;
     margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: #fff;
-    color: #222;
+    font-size: 15px;
+    line-height: 28px;
+    background-color: #F2F2F2;
+    background: url(../img/bg-right.svg) left bottom,url(../img/bg-left.svg) right -50px top -10px ;
+    background-size:22%;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat','Arial' , sans-serif;
+    color: var(--text_color);
 }
 img{
     max-width: 100%;
@@ -28,11 +38,11 @@ img{
 
 /* conteiner */
 
-.conteiner{
+.container{
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1100px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -40,4 +50,123 @@ img{
 /* main_content */
 .main_content{
     flex-grow: 1;
+}
+.page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+.page_titles {
+}
+.pricing {
+    width: 100%;
+}
+.pricing_iner {
+    display: flex;
+    align-items: center;
+}
+.pricing-plan {
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    padding: 32px;
+    text-align: center;
+    background: #FFFFFF;
+}
+.pricing-plan_best {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    background: linear-gradient(135.06deg, #A2A7F0 -0.05%, #696EDD 100.05%);
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px;
+    color: var(--text_color_white);
+    
+}
+.pricing-plan:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+}
+.pricing-plan:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+}
+.pricing-plan__titel {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+.pricing-plan__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 71px;
+    letter-spacing: -2.16px;
+}
+.pricing-plan__currency {
+    margin-right: 8px;
+    font-size: 40px;
+    line-height: 40px;
+}
+.pricing-plan_faetures {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top:1px solid rgb(110, 114, 142, 0.25 ) ;
+    margin-bottom: 46px;
+}
+.pricing-plan__faeture {
+    padding: 12px;
+    list-style: none;
+    border-bottom:1px solid rgb(110, 114, 142, 0.25 ) ;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    }
+.pricing-plan_best .pricing-plan_faetures{
+    border-color: rgb(255, 255, 255,0.25);
+}
+.pricing-plan_best .pricing-plan__faeture {
+    border-color: rgb(255, 255, 255,0.25);
+}
+.buuton {
+    margin: 0;
+    padding: 14px 66px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.39286px;
+    background: var(--text_color_white);
+    text-decoration: none;
+    border-radius: 6px;
+}
+.buuton_block {
+   display: block;
+}
+.buuton_primary {
+    color: #fff;
+    background: linear-gradient(135.06deg, #A2A7F0 -0.05%, #696EDD 100.05%);
+}
+
+.buuton_white {
+    background: var(--text_color_white);
+    color: #696EDD;
 }
