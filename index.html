@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pricing-component</title>
     <!-- styles -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,6 +16,19 @@
         <h1 class="page_titles">
             Our Pricing
         </h1>
+        <form class="pricing-switch" action="https://echo.htmlacademy.ru" method="get">
+            <div class="switch">
+                <input class="switch_input-annual visually-hidden" type="radio" name="payment_period" value="annual" id="annual-payment-radio">
+                <input class="switch_input-monthly visually-hidden" type="radio" name="payment_period" value="monthly" id="monthly-payment-radio">
+                <label class="switch_label" for="annual-payment-radio">Annually</label>
+                <div class="switch_control">
+                    <div class="switch_dicsk"></div>
+                    <label class="switch_control_annual"for="annual-payment-radio"></label>
+                    <label class="switch_control_monthly"for="monthly-payment-radio"></label>
+                </div>
+                <label class="switch_label" for="monthly-payment-radio">Monthly</label>
+            </div>
+        </form>
         <section class="pricing">
             <div class="pricing_iner">
                 <section class="pricing-plan">
